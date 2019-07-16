@@ -1,0 +1,17 @@
+header {
+  width: 100%;
+  background-color: #E2E2E2;
+  padding-top: 120px;
+  background-image: url('../images/arches.png');
+  background-repeat: repeat;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+textarea {
+  width: 100%;
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 4px #555149 solid;
+}
+
+form [type="submit"], form button {
+  -webkit-appearance: button;
+  background-color: #4152A1;
+  color: #FFF;
+  font-family: 'Bungee', cursive;
+  border: 0;
+  padding: 0.5em;
+  margin-top: 1.5em;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+  float: right;
+  margin-top: 1.5em;
+
+}

@@ -1,0 +1,32 @@
+nav {
+  height: 120px;
+  background-color: #4056A1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1.5em;
+  top: 0;
+}
+
+nav #left, nav #right {
+  width: 50%;
+  float: left;
+}
+
+nav #right {text-align: right;}
+
+nav #left span {
+  font-size: 40px;
+  font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+}
+
+nav #right span {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+}
+
+nav #right span bold {
+  font-weight: bold;
+}

@@ -7,8 +7,14 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -21,11 +27,44 @@
 
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div id="left">
+        <span>tweeter</span>
+      </div>
+      <div id="right">
+        <span><bold>Write</bold> a new tweet</span>
+      </div>
     </nav>
+
+    <header>
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Your Name</h2>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form action="/tweets" method="POST">
+            <textarea name="text" placeholder="What are you humming about?"></textarea>
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </form>
+        </section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit placerat scelerisque. Morbi luctus, erat vitae congue tempus, magna quam pellentesque nisi, vitae ultricies lectus dolor vitae justo. Sed eros magna, consequat ac justo nec, fringilla laoreet justo. Nullam lacinia suscipit quam, vitae volutpat enim tristique vitae. Nunc lacinia enim et imperdiet condimentum. Phasellus dignissim euismod congue. Sed ac urna nec metus porta viverra. Integer vitae quam ac dui congue euismod non id ipsum. Quisque varius arcu vitae nulla posuere mollis. Curabitur bibendum nec nulla sed varius. Nulla facilisi. Nunc nec nibh sit amet eros scelerisque rhoncus nec non justo. Donec dolor ante, aliquam ut mauris quis, scelerisque condimentum quam. Mauris finibus tortor eget ullamcorper maximus. Aenean venenatis mattis nibh sit amet auctor. In viverra euismod orci, quis vestibulum dolor lobortis vel.
+          
+        Sed bibendum faucibus tortor non pulvinar. Quisque in arcu ultrices, euismod est in, luctus eros. Vestibulum mollis quis diam ac viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla sollicitudin risus ipsum, nec imperdiet odio ultrices vitae. Morbi vel leo ac metus maximus posuere at eleifend sem. Aenean ornare sed urna eget molestie. Maecenas cursus, enim eget blandit cursus, tellus nulla tincidunt arcu, et imperdiet enim augue quis nisl. Curabitur auctor suscipit gravida. Morbi efficitur auctor ex eget scelerisque. Vivamus vitae mauris quis eros varius congue. Aliquam vitae dolor dignissim, venenatis lectus vel, ullamcorper nisl. Maecenas ex elit, porttitor et elementum in, hendrerit in lectus. Maecenas in dignissim sem.
+        
+        Sed aliquam tempor condimentum. Morbi maximus lobortis est, sit amet faucibus libero vestibulum id. Morbi suscipit nibh quis velit commodo egestas. Praesent metus urna, vehicula sed erat non, pharetra iaculis nibh. Aliquam erat volutpat. Vestibulum imperdiet, tellus eu ornare imperdiet, est elit pretium ipsum, a molestie tortor augue gravida eros. Nullam ut malesuada orci, eu rutrum justo. Donec leo dui, molestie in eleifend at, pellentesque in arcu.
+        
+        Curabitur a tempus urna, id commodo nisl. Vivamus mauris massa, tempor eget eros venenatis, porta laoreet arcu. Donec eros lectus, dictum vel turpis id, posuere volutpat risus. Aliquam gravida gravida facilisis. Curabitur enim magna, sollicitudin scelerisque scelerisque at, sodales sit amet ex. Sed rutrum, justo ac malesuada tristique, quam purus consectetur ipsum, ac dignissim dolor enim consectetur metus. Proin interdum lacus a turpis fringilla, sed maximus purus consectetur. Donec eleifend justo mauris, non vulputate sem ornare eget. In iaculis condimentum sagittis. Integer tincidunt dui eget nunc tincidunt fringilla. Nulla enim dolor, elementum tristique tellus vel, elementum pretium sapien. Suspendisse maximus porta ligula, et sodales neque fermentum facilisis.
+        
+        Quisque elementum metus vitae quam ornare volutpat. Donec eget mollis leo, eget fermentum tellus. Curabitur euismod ornare tellus, at efficitur eros sodales a. Mauris imperdiet, nulla et placerat faucibus, dolor lorem euismod lorem, in posuere ligula massa pharetra mi. Integer feugiat purus lacus. Curabitur blandit gravida arcu, eu posuere neque sollicitudin sit amet. Curabitur posuere nibh at nunc pretium, eget fermentum libero egestas. Sed in libero orci.</p>
+
     </main>
 
   </body>
