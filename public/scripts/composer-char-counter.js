@@ -10,12 +10,6 @@
 //   });
 // });
 
-// $(document).ready(function() {
-//   $('.new-tweet > form > textarea').on('change keydown keyup blur keypress', function(event) {
-//     console.log(event);
-//   });
-// });
-
 $(document).ready(function() {
   $('.new-tweet > form > textarea').on('keydown', function(event) {
     let count = $(this).val().length + 1;
