@@ -19,5 +19,72 @@ form [type="submit"], form button {
   font-family: 'Bungee', cursive;
   float: right;
   margin-top: 1.5em;
+}
 
+article .avi-name {
+  display: inline-block;
+  width: 50%;
+}
+
+article .avi-name img {
+  float: left;
+}
+
+article .avi-name p {
+  display: inline-block;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+article .username {
+  float: right;
+  display: inline-block;
+  width: 50%;
+}
+
+article .username a {
+  float: right;
+  color: #C7CCE3;
+  text-decoration: none;
+}
+
+article .username a:hover {
+  color: #B1B5C9;
+}
+
+article.tweet {
+  margin-top: 3rem;
+  border: 4px solid #555149;
+  padding: 1.5em;
+}
+
+article.tweet hr {
+  border: none;
+  background-color: #545149;
+  height: 3px;
+}
+
+article.tweet .date {
+  margin-top: 1.5rem;
+  font-size: 16px;
+  width: 50%;
+}
+
+article.tweet .icons {
+  float: right;
+  margin-top: -2rem;
+}
+
+article.tweet .icons img {
+  float: left;
+}
+
+article.tweet:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+}
+
+article.tweet:hover a{
+  color: #B1B5C9;
 }
