@@ -17,7 +17,7 @@ const createTweetElement = function(tweet) {
   // set tags
   let $post_container = $('<article>');
   let $handle = $('<a>');
-  let $avatar = $(`<img src="${tweet.user.avatars}" />`);
+  let $avatar = `<img src="${tweet.user.avatars}" />`;
   let $name = $('<h1>');
   let $post = $('<p>');
   let $date = $('<h2>');
