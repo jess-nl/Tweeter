@@ -1,3 +1,4 @@
+/* compose tweet form */
 textarea {
   width: 100%;
   border: 0;
@@ -5,86 +6,55 @@ textarea {
   border-bottom: 4px #555149 solid;
 }
 
+/* compose tweet submit button */
 form [type="submit"], form button {
   -webkit-appearance: button;
   background-color: #4152A1;
-  color: #FFF;
+  color: #FFFFFF;
   font-family: 'Bungee', cursive;
   border: 0;
   padding: 0.5em;
   margin-top: 1.5em;
 }
 
+/* compose tweet counter */
 .counter {
   font-family: 'Bungee', cursive;
   float: right;
   margin-top: 1.5em;
 }
 
-article .avi-name {
-  display: inline-block;
-  width: 50%;
-}
+/* container for all the tweets */
+.tweet-container {margin-bottom: 3rem;}
 
-article .avi-name img {
-  float: left;
-}
-
-article .avi-name p {
-  display: inline-block;
-  padding-left: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-article .username {
-  float: right;
-  display: inline-block;
-  width: 50%;
-}
-
-article .username a {
-  float: right;
-  color: #C7CCE3;
-  text-decoration: none;
-}
-
-article .username a:hover {
-  color: #B1B5C9;
-}
-
-article.tweet {
+/* post */
+article {
   margin-top: 3rem;
   border: 4px solid #555149;
   padding: 1.5em;
 }
 
-article.tweet hr {
-  border: none;
-  background-color: #545149;
-  height: 3px;
-}
-
-article.tweet .date {
-  margin-top: 1.5rem;
-  font-size: 16px;
-  width: 50%;
-}
-
-article.tweet .icons {
-  float: right;
-  margin-top: -2rem;
-}
-
-article.tweet .icons img {
-  float: left;
-}
-
-article.tweet:hover {
+/* post hover */
+article:hover {
   -webkit-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
   -moz-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
   box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
 }
 
-article.tweet:hover a{
-  color: #B1B5C9;
-}
+/* avatar */
+article img {margin: 0; float: left; padding-right: 1rem;}
+
+/* name */
+article h1 {font-size: 24px; font-weight: normal;}
+
+/* handle */
+article a {color: #C7CCE3; float: right;}
+
+/* handle hover */
+article:hover a {color: #B1B5C9;}
+
+/* post */
+article p {border-bottom: 3px solid #555149; padding: 2rem 0 1.5rem;}
+
+/* date */
+article h2 {font-size: 16px; font-weight: normal; text-align: left;}
