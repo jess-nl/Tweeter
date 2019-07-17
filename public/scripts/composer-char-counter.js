@@ -11,8 +11,8 @@
 // });
 
 $(document).ready(function() {
-  $('.new-tweet > form > textarea').on('keydown', function(event) {
-    let count = $(this).val().length + 1;
+  $('.new-tweet > form > textarea').on('keyup', function(event) {
+    let count = $(this).val().length;
     let counter = $('.counter').text(140-count);
 
     if (count >= 140) {
