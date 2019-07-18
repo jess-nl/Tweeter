@@ -56,6 +56,9 @@ const loadCurrentTweet = function() {
 $(document).ready(function() {
   loadTweets();
 
+  let $error = $('<p>');
+  $("#error-message").append($error);
+
   $('.new-tweet form').on('submit', function (event) {
     event.preventDefault();
 
@@ -63,12 +66,17 @@ $(document).ready(function() {
     console.log("Field:", field);
 
     if (!field) {
-      // alert("Oh no! Your field is empty!");
+      $error.text("Oh no! Your field is empty!");
+      // $("#error-message").addClass('show_error_msg');
+      $("#error-message").slideDown().addClass('show_error_msg');
+      
     } else if (field.length >= 140) {
-      // alert("Oops! You've reached the maximum characters!");
+      $error.text("Oops! You've reached the maximum characters!");
+      $("#error-message").slideDown().addClass('show_error_msg');
+
     } else {
-      // alert("You're good!");
       $.post( "/tweets", $(event.target).serialize()).then(() => {
+        $("#error-message").slideUp().removeClass('show_error_msg');
         loadCurrentTweet();
       });
     }
