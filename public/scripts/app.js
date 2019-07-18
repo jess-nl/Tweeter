@@ -67,7 +67,6 @@ $(document).ready(function() {
 
     if (!field) {
       $error.text("Oh no! Your field is empty!");
-      // $("#error-message").addClass('show_error_msg');
       $("#error-message").slideDown().addClass('show_error_msg');
       
     } else if (field.length >= 140) {
