@@ -8,12 +8,9 @@ nav {
   top: 0;
 }
 
-nav #left, nav #right {
-  width: 50%;
-  float: left;
-}
+nav #left {width: 50%; float: left;}
 
-nav #right {text-align: right;}
+nav #right {float: right;}
 
 nav #left span {
   font-size: 40px;
@@ -25,8 +22,31 @@ nav #right span {
   font-size: 30px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
-nav #right span bold {
-  font-weight: bold;
+#right:hover span {color: #F56566;}
+
+nav #right span bold {font-weight: bold;}
+
+.arrows {
+  background: url(../images/arrows.png) no-repeat;
+  background-size: 30px;
+  height: 100px;
+  width: 30px;
+  margin-left: 50%;
+  cursor: pointer;
+}
+
+#right:hover .arrows,
+#right:focus .arrows,
+#right:active .arrows {
+	background-position: 0px 0px;
+	animation: arrowdown 2s infinite;
+}
+
+@keyframes arrowdown {
+  0% {background-position: 0px 0px;}
+  40% {background-position: 0px 10px;}
+  100% {background-position: 0px 20px !important;}
 }
