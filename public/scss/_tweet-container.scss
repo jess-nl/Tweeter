@@ -1,0 +1,85 @@
+// -----------------------------------------------
+// ------ Tweet Container & Submitted Tweets -----
+// -----------------------------------------------
+
+// Container which holds all submitted tweets
+.tweet-container {margin-bottom: 3rem;}
+
+// The tweet itself
+article.tweet {
+  margin-top: 3rem;
+  border: 3px solid $dark-grey;
+  padding: 1.5em;
+}
+
+// The tweet itself on hover
+article.tweet:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  text-shadow: 0 0 1px $dark-grey;
+}
+
+// -----------------------------------------------
+// ---------------- Tweet Header -----------------
+// -----------------------------------------------
+
+article.tweet header {
+  img {margin: 0; float: left; padding-right: 1rem;}
+  h1 {font-size: 24px; font-weight: normal; padding-top: 1rem;}
+  a {
+    color: $handle-color;
+    float: right;
+    text-shadow: none;
+    padding-top: 1rem;
+  }
+}
+
+// Handle on hover
+article.tweet:hover a {color: $handle-color-hover;}
+
+// -----------------------------------------------
+// ------------ Tweet Body (Message) -------------
+// -----------------------------------------------
+
+article.tweet body p {
+  border-bottom: 3px solid $dark-grey;
+  padding: 2rem 0 1.5rem;
+  word-wrap: break-word;
+}
+
+// -----------------------------------------------
+// ---------------- Tweet Footer -----------------
+// -----------------------------------------------
+
+// Date
+article.tweet footer h2 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+}
+
+// Icons
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 18px;
+    display: initial;
+    margin: 1rem 0 0 0;
+  }
+}
+
+// -----------------------------------------------
+// ----- Responsive Container For All Tweets -----
+// -----------------------------------------------
+
+@media screen and (max-width: 600px) {
+
+  article.tweet header a {font-size: 19px;}
+
+  article.tweet header h1 {font-size: 16px; text-align: right; clear: right; padding-top: 0.3rem;}
+
+  article.tweet body p {clear: left;}
+  
+}

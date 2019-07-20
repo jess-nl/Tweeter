@@ -1,0 +1,58 @@
+// -----------------------------------------------
+// ------------- Compose Tweet/Form --------------
+// -----------------------------------------------
+
+.new-tweet {
+  display: none;
+  h2 {text-align: left;}
+  form {margin-top: 2.5rem;}
+}
+
+// Compose tweet field styling
+.new-tweet textarea {
+  width: 100%;
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  border-bottom: 4px $dark-grey solid;
+}
+
+// Compose tweet submit button
+.new-tweet > form [type="submit"] {
+  -webkit-appearance: button;
+  background-color: $blue;
+  color: $white;
+  font-family: $bungee;
+  border: 0;
+  padding: 0.5em;
+  margin-top: 1.5em;
+}
+
+// -----------------------------------------------
+// --------- Compose Tweet Error Message ---------
+// -----------------------------------------------
+
+// Error message styling. Initially hidden.
+.new-tweet #error-message {
+  display: none;
+  border: 3px solid $light-red;
+  height: 120px;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  color: $light-red;
+}
+
+// Styling of error message once displayed
+.new-tweet > #error-message.show_error_msg {
+  margin-top: 2.5rem;
+  display: block;
+}
+
+// -----------------------------------------------
+// ----------- Compose Tweet Counter -------------
+// -----------------------------------------------
+
+.new-tweet > form > .counter {
+  font-family: $bungee;
+  float: right;
+  margin-top: 1.5em;
+}

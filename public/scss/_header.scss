@@ -1,7 +1,11 @@
+// -----------------------------------------------
+// --------------- Header Partial ----------------
+// -----------------------------------------------
+
 /* Header general styling */
 .flex header.head {
   width: 100%;
-  background-color: #E2E2E2;
+  background-color: $mid-grey;
   padding: 160px 1.5em 0.5em 1.5em;
   background-image: url('../images/arches.png');
   background-repeat: repeat;
@@ -17,7 +21,10 @@
 /* Header's name styling */
 .flex header.head h2 {text-align: center;}
 
-/* General responsive styling for header */
+// -----------------------------------------------
+// --------- Responsive Header Partial -----------
+// -----------------------------------------------
+
 @media screen and (min-width: 1200px) {
   .flex header.head {background: none !important; width: 40%;}
   .flex header.head h2 {margin-bottom: 0;}
@@ -25,6 +32,6 @@
   .flex header.head > div {
     background: url('../images/arches.png') repeat;
     padding: 1rem;
-    background-color: #E2E2E2;
+    background-color: $mid-grey;
   }
 }

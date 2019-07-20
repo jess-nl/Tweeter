@@ -1,19 +1,11 @@
-// // Double click anywhere on the screen
-// document.addEventListener("dblclick", (event) => {
-//   console.log(event);
-// });
-
-// // Log all textarea's JQuery events
-// $(document).ready(function() {
-//   $('textarea').on('scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave load resize scroll unload error keydown keypress keyup blur focus focusin focusout change select submit', function(event) {
-//     console.log(event);
-//   });
-// });
+// -----------------------------------------------
+// --------- Compose Tweet/Form Counter ----------
+// -----------------------------------------------
 
 $(document).ready(function() {
-  $('.new-tweet > form > textarea').on('keyup', function(event) {
+  $('.new-tweet > form > textarea').on('keyup', function() {
     let count = $(this).val().length;
-    let counter = $('.counter').text(140-count);
+    let counter = $('.counter').text(140 - count);
 
     if (count >= 140) {
       $('.counter').css({"color": "#F56566"});
