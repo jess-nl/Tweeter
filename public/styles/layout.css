@@ -3,16 +3,14 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+/* Global layout */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -21,12 +19,14 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
+body > .flex > main {
   margin: 0 auto;
   width: 90%;
   background-color: #f4f1ec;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+/* Global responsive layout */
+@media screen and (min-width: 1200px) {
+  body > .flex {display: flex;}
+  body > .flex > main {padding: 120px 1.5em 0 1.5em;}
+}

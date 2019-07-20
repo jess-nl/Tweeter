@@ -1,5 +1,5 @@
 /* error message above tweet compose tweet form */
-#error-message {
+.new-tweet #error-message {
   border: 3px solid #F56566;
   height: 120px;
   margin-bottom: 3rem;
@@ -8,12 +8,18 @@
   color: #F56566;
 }
 
-#error-message.show_error_msg {
+.new-tweet #error-message.show_error_msg {
   display: block;
 }
 
+.new-tweet {display: none;}
+
+.new-tweet h2 {text-align: left;}
+
+.new-tweet form {margin-top: 2.5rem;}
+
 /* compose tweet form */
-textarea {
+.new-tweet textarea {
   width: 100%;
   border: 0;
   background-color: rgba(0,0,0,0);
@@ -21,7 +27,7 @@ textarea {
 }
 
 /* compose tweet submit button */
-form [type="submit"], form button {
+.new-tweet > form [type="submit"] {
   -webkit-appearance: button;
   background-color: #4152A1;
   color: #FFFFFF;
@@ -32,47 +38,14 @@ form [type="submit"], form button {
 }
 
 /* compose tweet counter */
-.counter {
+.new-tweet > form > .counter {
   font-family: 'Bungee', cursive;
   float: right;
   margin-top: 1.5em;
 }
 
-/* container for all the tweets */
-.tweet-container {margin-bottom: 3rem;}
+.new-tweet > #error-message.show_error_msg {
 
-/* post */
-article {
-  margin-top: 3rem;
-  border: 3px solid #555149;
-  padding: 1.5em;
+  margin-top: 2.5rem;
+
 }
-
-/* post hover */
-article:hover {
-  -webkit-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
-  -moz-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
-  box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
-}
-
-/* avatar */
-article img {margin: 0; float: left; padding-right: 1rem;}
-
-/* name */
-article h1 {font-size: 24px; font-weight: normal;}
-
-/* handle */
-article a {color: #C7CCE3; float: right;}
-
-/* handle hover */
-article:hover a {color: #B1B5C9;}
-
-/* post */
-article p {
-  border-bottom: 3px solid #555149;
-  padding: 2rem 0 1.5rem;
-  word-wrap: break-word;
-}
-
-/* date */
-article h2 {font-size: 16px; font-weight: normal; text-align: left;}

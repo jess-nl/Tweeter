@@ -1,0 +1,62 @@
+/* container for all the tweets */
+.tweet-container {margin-bottom: 3rem;}
+
+/* post */
+article.tweet {
+  margin-top: 3rem;
+  border: 3px solid #555149;
+  padding: 1.5em;
+}
+
+/* post hover */
+article.tweet:hover {
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  box-shadow: 10px 10px 0px 0px rgba(177,181,201,1);
+  text-shadow: 0 0 1px #555149;
+}
+
+/* avatar */
+article.tweet header img {margin: 0; float: left; padding-right: 1rem;}
+
+/* name */
+article.tweet header h1 {font-size: 24px; font-weight: normal; padding-top: 1rem;}
+
+/* handle */
+article.tweet header a {color: #C7CCE3; float: right; text-shadow: none; padding-top: 1rem;}
+
+/* handle hover */
+article.tweet header:hover a {color: #B1B5C9;}
+
+/* post */
+article.tweet body p {
+  border-bottom: 3px solid #555149;
+  padding: 2rem 0 1.5rem;
+  word-wrap: break-word;
+}
+
+/* date */
+article.tweet footer h2 {font-size: 16px; font-weight: normal; text-align: left;}
+
+article.tweet footer {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+article.tweet footer img {
+  height: 18px;
+  display: initial;
+  margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+
+  article.tweet header a {font-size: 19px;}
+
+  article.tweet header h1 {font-size: 16px; text-align: right; clear: right; padding-top: 0.3rem;}
+
+  article.tweet body p {clear: left;}
+  
+}
