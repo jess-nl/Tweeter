@@ -4,7 +4,10 @@
  * Do not modify these two selectors, please
  */
 
-/* Global layout */
+// -----------------------------------------------
+// --- Layout (Global, Base & General) Partial ---
+// -----------------------------------------------
+
 html {
   box-sizing: border-box;
 }
@@ -13,19 +16,22 @@ html {
 }
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: $dark-grey;
+  background-color: $light-grey;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $source-sp;
 }
 
 body > .flex > main {
   margin: 0 auto;
   width: 90%;
-  background-color: #f4f1ec;
+  background-color: $light-grey;
 }
 
-/* Global responsive layout */
+// -----------------------------------------------
+// ---------- Responsive Global/Layout -----------
+// -----------------------------------------------
+
 @media screen and (min-width: 1200px) {
   body > .flex {display: flex;}
   body > .flex > main {padding: 120px 1.5em 0 1.5em;}

@@ -1,0 +1,87 @@
+// -----------------------------------------------
+// ------------- Top Bar Navigation --------------
+// -----------------------------------------------
+
+// Navigation bar general styling
+body nav {
+  height: 120px;
+  background-color: $blue;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+// -----------------------------------------------
+// ---------- "Write a new tweet" Text -----------
+// -----------------------------------------------
+
+body > nav > span {
+  font-size: 40px;
+  font-family: $bungee;
+  color: $white;
+}
+
+body > nav > #compose_btn span {
+  font-size: 30px;
+  font-family: $source-sp;
+  color: $white;
+  cursor: pointer;
+}
+
+body > nav > #compose_btn:hover span {color: $dark-red;}
+body > nav > #compose_btn span bold {font-weight: bold;}
+
+
+// -----------------------------------------------
+// ---- Arrow below "Write a new tweet" Text -----
+// -----------------------------------------------
+
+body nav #compose_btn .arrows {
+  background: url(../images/arrows.png) no-repeat;
+  background-position: 0px 0px;
+  background-size: 30px;
+  height: 40px;
+  width: 30px;
+  margin-left: 50%;
+  cursor: pointer;
+	animation: arrowdown 2s infinite;
+}
+
+// Arrow color changes on mouseover
+body nav #compose_btn:hover .arrows,
+body nav #compose_btn:focus .arrows,
+body nav #compose_btn:active .arrows {
+  background: url(../images/arrows_hover.png) no-repeat;
+  background-size: 30px;
+}
+
+// Transitions for arrow animation
+@keyframes arrowdown {
+  0% {background-position: 0px 0px;}
+  40% {background-position: 0px 10px;}
+  100% {background-position: 0px 20px !important;}
+}
+
+// -----------------------------------------------
+// -------- Responsive Top Bar Navigation --------
+// -----------------------------------------------
+
+@media screen and (max-width: 600px) {
+  
+  body nav {display: block; padding: .4em .5em;}
+
+  body nav span {font-size: 30px;}
+  body > nav > #compose_btn span {font-size: 22px;}
+
+  body > nav > #compose_btn .arrows,
+  body > nav > #compose_btn:hover .arrows,
+  body > nav > #compose_btn:focus .arrows,
+  body > nav > #compose_btn:active .arrows {
+    margin-left: 4rem;
+    background-size: 25px;
+  }
+
+}
