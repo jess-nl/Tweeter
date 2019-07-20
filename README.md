@@ -18,6 +18,7 @@ Jess N-L
 
 - Express
 - Node 5.10.x or above
+- SASS 1.22.7
 
 ## Author's Notes
 
