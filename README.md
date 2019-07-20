@@ -32,7 +32,7 @@ Jess N-L
 ### 1. Web
 !["Screenshot Tweeter Web"](https://github.com/jess-nl/tweeter/blob/master/docs/compose_tweet.png)
 
-### 2. Web (on hover tweet box)
+### 2. Web (tweet box hover)
 !["Screenshot Tweeter Web Hover"](https://github.com/jess-nl/tweeter/blob/master/docs/tweet_hover.png)
 
 ### 3. Tablet
