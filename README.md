@@ -19,16 +19,24 @@ Jess N-L
 - Express
 - Node 5.10.x or above
 
+## Author's Notes
+
+- Applied an effect whenever the user submits the form. This was not required.
+
+- You can view all my jQuery/JS files in the scripts folder **/public/scripts**.
+
+- Implemented SASS before finalizing the project. You can view all my partials in the scss folder **/public/scss**. SASS auto-generates a stylesheet file which can be viewed in my css folder **/public/css**.
+
 ## Screenshots
 
-#### 1. Web
+### 1. Web
 !["Screenshot Tweeter Web"](https://github.com/jess-nl/tweeter/blob/master/docs/compose_tweet.png)
 
-#### 2. Web (on hover tweet box)
+### 2. Web (on hover tweet box)
 !["Screenshot Tweeter Web Hover"](https://github.com/jess-nl/tweeter/blob/master/docs/tweet_hover.png)
 
-#### 3. Tablet
+### 3. Tablet
 !["Screenshot Tweeter Tablet"](https://github.com/jess-nl/tweeter/blob/master/docs/tablet.png)
 
-#### 4. Mobile
+### 4. Mobile
 !["Screenshot Tweeter Mobile"](https://github.com/jess-nl/tweeter/blob/master/docs/mobile.png)
