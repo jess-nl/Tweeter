@@ -21,11 +21,11 @@ Jess N-L
 
 ## Author's Notes
 
-- Applied an effect whenever the user submits the form. This was not required.
+- Applied a sliding effect whenever the user submits the form. This was not required.
 
-- You can view all my jQuery/JS files in the scripts folder **/public/scripts**.
+- You can view all the project's jQuery/JS files in the scripts folder **/public/scripts**.
 
-- Implemented SASS before finalizing the project. You can view all my partials in the scss folder **/public/scss**. SASS auto-generates a stylesheet file which can be viewed in my css folder **/public/css**.
+- Implemented SASS before finalizing the project. You can view all the project's partials in the scss folder **/public/scss**. SASS auto-generates a stylesheet file which can be viewed in my css folder **/public/css**.
 
 ## Screenshots
 
